@@ -1,3 +1,5 @@
+#!/bin/bash
+cat <<EOF > index.html
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,13 +7,14 @@
 </head>
 <body>
     <h1>About Me</h1>
-    <p><strong>Name:</strong> Ponguluri</p>
-    <p><strong>Role:</strong> Software Engineer</p>
-    <p><strong>Age:</strong> 25</p>
+    <p><strong>Name:</strong> $NAME</p>
+    <p><strong>Role:</strong> $ROLE</p>
+    <p><strong>Age:</strong> $AGE</p>
     
     <h2>Introduction</h2>
     <p>
-        Hello, I'm Ponguluri, a software engineer with a passion for coding and technology. I'm 25 years old and enthusiastic about creating software solutions to solve real-world problems. I enjoy collaborating with others, learning new technologies, and continuously improving my skills. In my free time, you can find me exploring the latest trends in software development or working on personal coding projects.
+        Hello, I'm $NAME, a $ROLE with a passion for coding and technology. I'm $AGE years old and enthusiastic about creating software solutions to solve real-world problems. I enjoy collaborating with others, learning new technologies, and continuously improving my skills. In my free time, you can find me exploring the latest trends in software development or working on personal coding projects.
     </p>
 </body>
 </html>
+EOF
